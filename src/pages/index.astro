@@ -1,12 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import EventoActual from '../sections/Evento-Actual.astro';
+import EventosAgotados from '../sections/Eventos-Agotados.astro';
+import Eventos from '../sections/Eventos.astro';
+import Header from '../sections/Header.astro';
+import Footer from '../sections/Footer.astro';
 ---
 
 <Layout title="COMPRA TU EVENTO.">
-	<main>
-		
+	<Header />
+	<main class="mt-8">
+		<EventoActual />
+		<EventosAgotados />
+		<Eventos />
 	</main>
+	<Footer />
 </Layout>
 
 <style>
